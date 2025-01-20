@@ -1,6 +1,9 @@
-# eClient's New Website
+# Argon's Website
+![image](https://github.com/user-attachments/assets/748415ea-c879-47f9-adfa-5edadad1896b)
 
-*This is still in development*
+✅ Icons from [Font Awesome](https://fontawesome.com/)
 
-Site is not live yet, as I am still working on responsive layout.
+✨ Design inspired by [Sklauncher's website](https://skmedix.pl)
 
+
+Argon is in no way affiliated with Mojang Studios, nor should it be considered a project endorsed by Mojang Studios.
