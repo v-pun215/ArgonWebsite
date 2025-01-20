@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/mc.ico" type="image/x-icon">
+    <title>Argon</title>
+</head>
+<body>
+    <nav>
+        <div onclick="home()" class="left">
+            <img src="img/logo.png" width="40px" height="40px">
+            <h1 class="logo">Argon</h1>
+        </div>
+        <div class="center">
+            <a href="downloads.html" class="nav-link"><i style="margin-right:8px;" class="fa-solid fa-download"></i> Downloads</a>
+            <a href="try.html" style="margin-left:10px;" class="nav-link"><i style="margin-right:8px;" class="fa-solid fa-globe"></i> Try</a>
+            <a href="support.html" style="margin-left:10px;" class="nav-link"><i style="margin-right:8px;" class="fa-solid fa-wrench"></i> Support</a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/v-pun215/Argon" class="git-link"><i style="margin-right:8px;" class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </nav>
+    <div class="mnav">
+        <div class="left">
+            <img src="img/logo.png" width="40px" height="40px">
+            <h1 class="logo">Argon</h1>
+        </div>
+        <div class="right">
+            <span onclick="openNav()" class="open"><i class="fa-solid fa-bars fa-2x"></i></span>
+        </div>
+    </div>
+    <div id="myNav" class="overlay">
+        <div id="lll" class="left">
+            <img src="img/logo.png" width="40px" height="40px">
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    <div class="banner">
+        <div class="lefty">
+            <p onclick="changelog('1.0.1')" class="news">See what's new in v1.0.1 <i style="margin-left:5px;" class="fa-solid fa-arrow-right"></i></p>
+            <h2 class="sm">The Ultimate</h2>
+            <h1 class="ml">Minecraft Launcher</h1>
+            <p class="ttl" style="max-width: 635px;letter-spacing: 0.1px; line-height: 30px;">Experience the ultimate Minecraft launcher with Argon. Seamlessly integrate mods, customize your game, and enjoy a smooth, hassle-free experience.</p>
+            <button style="width:fit-content;" class="cool start2" onclick="download()">Download</button>
+        </div>
+        <div class="righty" id="maskparent">
+            <img alt="A screenshot taken inside Minecraft" id="mask" src="img/argon.png" width="750vh" style="border-radius:5px;margin-top:40px">
+        </div>
+    </div>
+    <center>
+    <div class="features">
+        <center>
+            <h1 class="imp">Enhance Your Minecraft Adventure</h1>
+            <p id="imp">Experience unparalleled convenience and performance with this state-of-the-art Minecraft launcher, designed to enhance every aspect of your gameplay.</p>
+        </center>
+        <div class="buttons">
+            <div class="lefter gradient-bg" data-bg="none">
+                <h2 style="font-weight:600;margin-top:5px;"><i style="margin-right:5px;" class="fa-solid fa-server"></i> Built-in modloaders</h2>
+                <p style="max-width: 500px;font-size: 1.05rem;font-weight: 450; line-height: 23px;margin-top:-5px;">With Argon, you can easily switch between Fabric and Forge modloaders, providing a flexible and customizable Minecraft experience.</p>
+            </div>
+            <div class="centerer">
+                <h2 style="font-weight:600;margin-top:5px;"><i style="margin-right:5px;" class="fa-solid fa-box"></i> Mod Installation</h2>
+                <p style="max-width: 500px;font-size: 1.05rem;font-weight: 450; line-height: 23px;margin-top:-5px;">Argon makes mod management easy with built-in Modrinth support, letting you quickly find, download, and install mods.</p>
+            </div>
+            <div class="righter" data-bg="none">
+                <h2 style="font-weight:600;margin-top:5px;"><i style="margin-right:5px;" class="fa-solid fa-upload"></i> Minecraft Updates</h2>
+                <p style="max-width: 500px;font-size: 1.05rem;font-weight: 450; line-height: 23px;margin-top:-5px;">Access the latest Minecraft updates with Argon. Choose from the newest releases, snapshots, or older versions and start playing immediately.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="one" src="img/1.png" width="83%">
+            <img class="two" src="img/2.png" width="83%">
+            <img class="three" src="img/3.png" width="83%">
+        </div>
+        <div class="ft">
+            <div class="ly">
+                <div id="up">
+                    <span class="log"><i class="fa-solid fa-feather"></i></span>
+                </div>
+                <h2 style="font-weight:500;margin-left:30px;margin-top:25px;font-size:1.75rem;">Lightweight and easy to install</h2>
+                <p style="max-width: 500px;font-size: 1.15rem;font-weight: 400; line-height: 25px;margin-top:-5px;margin-left:30px;">Argon is a compact launcher, with a size of just 2.5MB. It is simple to install and use, compatible with Windows 10 and above. The installer includes all necessary prerequisites, including Python. Enjoy a smooth Minecraft experience with Argon.</p>
+            </div>
+            <div class="ry">
+                <div id="up">
+                    <span class="log"><i class="fa-solid fa-palette"></i></span>
+                </div>
+                <h2 style="font-weight:500;margin-left:30px;margin-top:25px;font-size:1.75rem;">Customize your Minecraft experience</h2>
+                <p style="max-width: 500px;font-size: 1.15rem;font-weight: 400; line-height: 25px;margin-top:-5px;margin-left:30px;">With Argon, you can personalize your Minecraft experience. Switch skins, change the game language, and select from various versions. Customize settings to optimize performance and use the built-in resource pack manager to enhance visuals. Argon supports various mods, making your gameplay unique.</p>
+            </div>
+        </div>
+    </div>
+    </center>
+    <center>
+    <div class="final">
+            <div class="finallogo">
+                <img src="img/logo.png" width="100px" height="100px">
+            </div>
+            <h1 class="imp2">Start using <span class="icony">Argon</span> today</h1>
+            <p class="imp3">Safe, fast and customizable.</p>
+            <button style="width:fit-content;" class="start2 color-9" onclick="download()"><i style="margin-right:10px;" class="fa-solid fa-download"></i>Download</button>
+    </div>
+</center>
+    <div class="footer">
+        <div class="ony">
+            <img src="img/logo.png" width="40px" height="40px">
+            <h2 style="margin-left:5px;font-weight:600;">Argon</h2>
+            <p id="cp">Copyright © 2025 <a class="foo" href="https://vpun215.netlify.app">v-pun215</a>.</p>
+        </div>
+        <p style="font-size:0.95rem; max-width: 500px;line-height: 20px;color:#ababad;">Argon is in no way affiliated with Mojang Studios, nor should it be considered a project endorsed by Mojang Studios.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
